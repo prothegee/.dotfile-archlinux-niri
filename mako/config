@@ -1,0 +1,74 @@
+sort=-time
+layer=overlay
+
+border-size=1
+border-radius=6
+border-color=#1a8712
+
+default-timeout=3300
+
+background-color=#121212e6
+
+###########################
+# TEMPLATE
+###########################
+# font=Fira Code Nerd Font
+# sort=-time
+# layer=overlay
+# anchor=bottom-right
+#
+# icons=0
+# max-icon-size=128
+#
+# width=512
+# height=256
+#
+# border-size=1
+# border-radius=6
+#
+# default-timeout=3300
+#
+# background-color=#121212e6
+#
+# [urgency=low]
+# border-color=#FFB27Dee
+#
+# [urgency=normal]
+# border-color=#FFF200ee
+#
+# [urgency=high]
+# # position (top/bottom/left/right)
+# layer=overlay
+# anchor=top-right
+# margin=20
+#
+# # appearance
+# font=Fira Code Nerd Font
+# background-color=#1e1e2e
+# text-color=#cdd6f4
+# border-color=#89b4fa
+# border-size=2
+# border-radius=5
+# width=300
+# padding=10
+#
+# # timeout in milliseconds (5000 = 5 seconds)
+# default-timeout=5000
+# ignore-timeout=false
+#
+# # urgency Levels
+# [urgency=low]
+# background-color=#313244
+# default-timeout=3000
+#
+# [urgency=critical]
+# background-color=#f38ba8
+# border-color=#f38ba8
+# default-timeout=0
+#
+# border-color=#bf616a
+# default-timeout=6000
+#
+# [category=mpd]
+# default-timeout=6000
+# group-by=category
