@@ -19,13 +19,19 @@ export NEWT_COLORS='
     textbox=blue,black
 '
 
+# --------------------------------------------------------- #
+
 rbashrc () {
 	. ~/.bashrc;
 }
 
+# --------------------------------------------------------- #
+
 _calc() {
     squiid;
 }
+
+# --------------------------------------------------------- #
 
 _shutdown() {
     shutdown -h now;
@@ -37,6 +43,8 @@ _logout() {
     # niri msg action quit;
     echo "NOTE: current niri action quit can't back you login\n    - find alternative";
 }
+
+# --------------------------------------------------------- #
 
 _init_gitignore() {
     curl -LO https://gist.githubusercontent.com/prothegee/6e3bece66292e4ed22d00545b6767705/raw/c08e6541b0596eafe5b61fc34bca1f694a9645e1/.gitignore
@@ -57,6 +65,8 @@ _init_rust_format() {
     curl -LO https://gist.githubusercontent.com/prothegee/99043189d356861356a5e8865bb3baa4/raw/adffa4449b52f562f5566a990adf3815f779a801/.rustfmt.toml
 }
 
+# --------------------------------------------------------- #
+
 # _format_go() {
 #     #
 # }
@@ -67,6 +77,8 @@ _init_rust_format() {
 #     #
 # }
 
+# --------------------------------------------------------- #
+
 _pacman-search() {
 	sudo pacman -Ssq | grep "^$1";
 }
@@ -76,6 +88,8 @@ _pacman-unused() {
 _pacman-unused-remove() {
 	sudo pacman -Qqtd | sudo pacman -Rsu -;
 }
+
+# --------------------------------------------------------- #
 
 _yay-search() {
 	yay -Ssq | grep "^$1";
@@ -89,9 +103,13 @@ _yay-unused-remove() {
 	yay -Qqtd | yay -Rsu -;
 }
 
+# --------------------------------------------------------- #
+
 _used-ports() {
 	sudo lsof -i -P -n | grep LISTEN;
 }
+
+# --------------------------------------------------------- #
 
 _eza() {
 	if [ -f "/usr/bin/eza" ]; then
@@ -102,6 +120,12 @@ _eza() {
 }
 
 alias ls="_eza"
+
+# --------------------------------------------------------- #
+
+#
+
+# --------------------------------------------------------- #
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/pr/.lmstudio/bin"

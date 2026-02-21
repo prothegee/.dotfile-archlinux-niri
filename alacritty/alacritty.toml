@@ -1,5 +1,5 @@
 [window]
-opacity = 0.75
+opacity = 0.90
 padding = { x = 6, y = 6 }
 
 [font]
@@ -22,6 +22,6 @@ family = "Fira Code"
 style = "Bold Italic"
 
 [colors]
-primary = { foreground = "#c6c6c6" }
+primary = { foreground = "#a6a6a6" }
 # primary = { foreground = "#c6c6c6", background = "#282c34" }
 # primary = { foreground = "#c6c6c6", background = "#131418" }
