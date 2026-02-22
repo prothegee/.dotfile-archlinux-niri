@@ -9,6 +9,7 @@ cp -rf ~/.bash_profile ~/.dotfile-archlinux-niri;
 cp -rf ~/.config/user-dirs.dirs ~/.dotfile-archlinux-niri;
 
 cp -rf ~/.config/alacritty ~/.dotfile-archlinux-niri;
+cp -rf ~/.config/gtk-3.0 ~/.dotfile-archlinux-niri;
 cp -rf ~/.config/mako ~/.dotfile-archlinux-niri;
 cp -rf ~/.config/neocmakelsp ~/.dotfile-archlinux-niri;
 cp -rf ~/.config/niri ~/.dotfile-archlinux-niri;
