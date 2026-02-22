@@ -632,6 +632,11 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // OBS-CMD
+    Mod+KP_7 { spawn "obs-cmd" "recording" "start"; }
+    Mod+KP_8 { spawn "obs-cmd" "recording" "toggle-pause"; }
+    Mod+KP_9 { spawn "obs-cmd" "recording" "stop"; }
 }
 
 gestures {
