@@ -1,6 +1,0 @@
-# command_case="lower_case"
-enable_external_cmake_lint=true
-line_max_words=160
-
-[format]
-args=["--indent", "4"]
