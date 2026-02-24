@@ -1,12 +1,16 @@
 #!/usr/bin/sh
 mkdir -p ~/.dotfile-archlinux-niri;
 
+
 cp -rf ~/sync-dotfile-archlinux-niri.sh ~/.dotfile-archlinux-niri;
+
 
 cp -rf ~/.bashrc ~/.dotfile-archlinux-niri;
 cp -rf ~/.bash_profile ~/.dotfile-archlinux-niri;
 
+
 cp -rf ~/.config/user-dirs.dirs ~/.dotfile-archlinux-niri/.config;
+
 
 cp -rf ~/.config/alacritty ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/gtk-3.0 ~/.dotfile-archlinux-niri/.config;
@@ -20,3 +24,4 @@ cp -rf ~/.config/lm-studio ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/superfile ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/wallpaper ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/xdg-desktop-portal ~/.dotfile-archlinux-niri/.config;
+cp -rf ~/.config/zed ~/.dotfile-archlinux-niri/.config;
