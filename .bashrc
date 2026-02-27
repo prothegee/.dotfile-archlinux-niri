@@ -2,55 +2,45 @@
 # ~/.bashrc
 #
 
-[[ $- != *i* ]] && return;
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-alias ls='ls --color=auto';
-alias grep='grep --color=auto';
-PS1='[\u@\h \W]\$ ';
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
 
-# core
-export PATH="$PATH:$HOME/bin";
-export PATH="$PATH:$HOME/lib";
-export PATH="$PATH:$HOME/share";
-export PATH="$PATH:$HOME/opt";
-export PATH="$PATH:$HOME/include";
+# posh
+eval "$(oh-my-posh init bash --config ~/.poshthemes/multiverse-neon.omp.json)"
 
-export PATH="$PATH:$HOME/.local/bin";
+# core: DEVELOPMENT
+export DEVELOPMENT="/mnt/256a1";
 
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/lib";
-export C_INCLUDE_PATH="$C_INCLUDE_PATH:$HOME/include";
+export PATH="$PATH:$DEVELOPMENT/bin";
+export PATH="$PATH:$DEVELOPMENT/lib";
+export PATH="$PATH:$DEVELOPMENT/opt";
+export PATH="$PATH:$DEVELOPMENT/share";
+export PATH="$PATH:$DEVELOPMENT/include";
+
+# ne
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$DEVELOPMENT/lib";
+export C_INCLUDE_PATH="$C_INCLUDE_PATH:$DEVELOPMENT/include";
 
 # rust
-export CARGO_HOME="$HOME/.cargo";
-export RUSTUP_HOME="$HOME/.rust";
+export CARGO_HOME="$DEVELOPMENT/cargo";
+export RUSTUP_HOME="$DEVELOPMENT/rustup";
 
 export PATH="$PATH:$CARGO_HOME/bin";
 
-# zig
+# zig: reserved (part of $DEVELOPMENT/{bin,lib,include,share})
 
 # go
-export GOPATH="$HOME/.go";
+export GOPATH="$HOME/golang";
 
 export PATH="$PATH:$GOPATH/bin";
 export PATH="$PATH:$GOPATH/pkg";
 
-# ruby
-# export PATH="$PATH:$HOME/.rbenv/shims";
-# export PATH="$PATH:$HOME/.rbenv/versions/3.4.8/bin";
-# export PATH="$PATH:$HOME/.rbenv/versions/3.4.8/lib";
-# export PATH="$PATH:$HOME/.rbenv/versions/3.4.8/include";
-# export PATH="$PATH:$HOME/.rbenv/versions/3.4.8/share";
-
-# ruby: bin
-export PATH="$PATH:$HOME/.gem/bin";
-
-eval "$(rbenv init - --no-rehash bash)"
-
-# node/javascript/typescript
-export BUN_INSTALL="$HOME/.bun";
-export PATH="$BUN_INSTALL/bin:$PATH";
-
-export NVM_DIR="$HOME/.config/nvm";
+# nvm
+export NVM_DIR="$DEVELOPMENT/nvm";
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh";
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion";
 
@@ -60,18 +50,21 @@ if [ -n "$NVM_DIR" ]; then
     export PATH="$PATH:$NVIM_DIR/version/node/$NODE_VER/include";
 fi
 
-# posh
-eval "$(oh-my-posh init bash --config ~/.poshthemes/multiverse-neon.omp.json)";
+# bun
+export BUN_INSTALL="$DEVELOPMENT/bun";
+export PATH="$BUN_INSTALL/bin:$PATH";
 
-# extend
+# ruby
+export RBENV_ROOT="$DEVELOPMENT/rbenv";
+export PATH="$PATH:$RBENV_ROOT/bin";
+
+eval "$(rbenv init - --no-rehash bash)"
+
+# var
+export SEARXNG_URL="http://localhost:12345";
+
+# extends
 source ~/.bash_profile;
 
-if [ -n "$HOME/.podman-container" ]; then
-    source "$HOME/.podman-container/env.sh";
-fi
+# OTHERS
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/pr/.lmstudio/bin"
-# End of LM Studio CLI section
-
-export SEARXNG_URL="http://localhost:12345"

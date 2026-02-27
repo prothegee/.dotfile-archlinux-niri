@@ -29,6 +29,7 @@ cp -rf ~/.config/systemd ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/lm-studio ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/superfile ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/wallpaper ~/.dotfile-archlinux-niri/.config;
+cp -rf ~/.config/waybar ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/xdg-desktop-portal ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/zed ~/.dotfile-archlinux-niri/.config;
 
