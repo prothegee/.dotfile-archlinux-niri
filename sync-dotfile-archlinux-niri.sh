@@ -1,8 +1,14 @@
 #!/usr/bin/sh
 mkdir -p ~/.dotfile-archlinux-niri;
+mkdir -p ~/.dotfile-archlinux-niri/.vim;
 
 
 cp -rf ~/sync-dotfile-archlinux-niri.sh ~/.dotfile-archlinux-niri;
+
+
+cp -rf ~/.vimrc ~/.dotfile-archlinux-niri/.vimrc;
+cp -rf ~/.vim/vimrc ~/.dotfile-archlinux-niri/.vim/vimrc;
+cp -rf ~/.vim/theme.vim ~/.dotfile-archlinux-niri/.vim/theme.vim;
 
 
 cp -rf ~/.bashrc ~/.dotfile-archlinux-niri;
@@ -25,3 +31,4 @@ cp -rf ~/.config/superfile ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/wallpaper ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/xdg-desktop-portal ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/zed ~/.dotfile-archlinux-niri/.config;
+
