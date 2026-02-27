@@ -1,0 +1,26 @@
+* {
+	font-family: "FiraCode";
+	border: none;
+	border-radius: 0;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(18,18,18, 0.0);
+}
+
+.modules-right {
+    margin-right: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(18, 18, 18, 0.90);
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #1a8712;
+    border-width: 1px;
+    color: #1a8712;
+}
+.modules-right label {
+    padding-left: 12px;
+    padding-right: 12px;
+}
