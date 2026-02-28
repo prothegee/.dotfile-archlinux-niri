@@ -31,6 +31,8 @@ node_modules
 
 *Zone.Identifier
 
+/.config/systemd/user/default.target.wants
+
 ##
 ## file: include
 ##
