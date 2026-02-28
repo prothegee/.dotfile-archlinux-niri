@@ -16,6 +16,7 @@ cp -rf ~/.bash_profile ~/.dotfile-archlinux-niri;
 
 
 cp -rf ~/.config/user-dirs.dirs ~/.dotfile-archlinux-niri/.config;
+cp -rf ~/.config/user-dirs.locale ~/.dotfile-archlinux-niri/.config;
 
 
 cp -rf ~/.config/alacritty ~/.dotfile-archlinux-niri/.config;

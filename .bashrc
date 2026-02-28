@@ -64,6 +64,9 @@ eval "$(rbenv init - --no-rehash bash)"
 export SEARXNG_URL="http://localhost:12345";
 
 # extends
+if [ -n "$HOME/.podman-container" ]; then
+    source "$HOME/.podman-container/env.sh";
+fi
 source ~/.bash_profile;
 
 # OTHERS
