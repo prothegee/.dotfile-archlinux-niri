@@ -34,7 +34,7 @@ export PATH="$PATH:$CARGO_HOME/bin";
 # zig: reserved (part of $DEVELOPMENT/{bin,lib,include,share})
 
 # go
-export GOPATH="$HOME/golang";
+export GOPATH="$DEVELOPMENT/golang";
 
 export PATH="$PATH:$GOPATH/bin";
 export PATH="$PATH:$GOPATH/pkg";
