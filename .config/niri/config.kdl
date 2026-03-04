@@ -274,7 +274,8 @@ layout {
 spawn-at-startup "waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
-spawn-sh-at-startup "swaybg -i ~/.config/wallpaper/pexels-catiamatos-1072179.jpg"
+spawn-sh-at-startup "swaybg -i ~/.config/wallpaper/pexels-pixabay-462162.jpg"
+// spawn-sh-at-startup "swaybg -i ~/.config/wallpaper/pexels-catiamatos-1072179.jpg"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
