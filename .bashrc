@@ -40,6 +40,7 @@ export PATH="$PATH:$GOPATH/bin";
 export PATH="$PATH:$GOPATH/pkg";
 
 # dotnet
+DOTNET_DEFAULT_VER="10.0"
 export DOTNET_ROOT="$DEVELOPMENT";
 export DOTNET_HOME="$DEVELOPMENT";
 
@@ -47,6 +48,16 @@ export DOTNET_CLI_HOME="$DOTNET_ROOT";
 
 export NUGET_PACKAGES="$DEVELOPMENT/nuget-packages";
 
+export PATH="$PATH:$DOTNET_ROOT";
+export PATH="$PATH:$DOTNET_HOME";
+export PATH="$PATH:$DOTNET_CLI_HOME";
+export PATH="$PATH:$NUGET_PACKAGES";
+
+export PATH="$PATH:$DOTNET_ROOT/.nuget/lib";
+export PATH="$PATH:$DOTNET_ROOT/.nuget/lib/net$DOTNET_DEFAULT_VER";
+export PATH="$PATH:$DOTNET_ROOT/.nuget/content/LanguageServer/linux-x64";
+
+# not sure for these 3
 export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools";
 export PATH="$PATH:$DOTNET_HOME:$DOTNET_HOME/tools";
 export PATH="$PATH:$DOTNET_CLI_HOME:$DOTNET_CLI_HOME/tools";
@@ -87,4 +98,9 @@ fi
 source ~/.bash_profile;
 
 # OTHERS
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/pr/.lmstudio/bin"
+# End of LM Studio CLI section
 
