@@ -106,3 +106,8 @@ alias ls="_eza"
 
 # --------------------------------------------------------- #
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/pr/.lmstudio/bin"
+# End of LM Studio CLI section
+
