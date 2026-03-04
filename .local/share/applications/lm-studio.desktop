@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=LM Studio
+Exec=/home/pr/.local/bin/LM-Studio
+Icon=/home/pr/download/lm-studio/lmstudio-app-logo.11b4d746.png
+Type=Application
+Categories=Utility;Application;Productivity;
+Terminal=false
