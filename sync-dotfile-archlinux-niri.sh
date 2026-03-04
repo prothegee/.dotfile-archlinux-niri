@@ -1,6 +1,7 @@
 #!/usr/bin/sh
 mkdir -p ~/.dotfile-archlinux-niri;
 mkdir -p ~/.dotfile-archlinux-niri/.vim;
+mkdir -p ~/.dotfile-archlinux-niri/.local/share/applications;
 
 
 cp -rf ~/sync-dotfile-archlinux-niri.sh ~/.dotfile-archlinux-niri;
@@ -34,4 +35,7 @@ cp -rf ~/.config/wallpaper ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/waybar ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/xdg-desktop-portal ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/zed ~/.dotfile-archlinux-niri/.config;
+
+cp -rf ~/.local/share/applications/lm-studio.desktop \
+    ~/.dotfile-archlinux-niri/.local/share/applications;
 
