@@ -21,7 +21,7 @@ export PATH="$PATH:$DEVELOPMENT/opt";
 export PATH="$PATH:$DEVELOPMENT/share";
 export PATH="$PATH:$DEVELOPMENT/include";
 
-# ne
+# ne 1
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$DEVELOPMENT/lib";
 export C_INCLUDE_PATH="$C_INCLUDE_PATH:$DEVELOPMENT/include";
 
@@ -38,6 +38,18 @@ export GOPATH="$DEVELOPMENT/golang";
 
 export PATH="$PATH:$GOPATH/bin";
 export PATH="$PATH:$GOPATH/pkg";
+
+# dotnet
+export DOTNET_ROOT="$DEVELOPMENT";
+export DOTNET_HOME="$DEVELOPMENT";
+
+export DOTNET_CLI_HOME="$DOTNET_ROOT";
+
+export NUGET_PACKAGES="$DEVELOPMENT/nuget-packages";
+
+export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools";
+export PATH="$PATH:$DOTNET_HOME:$DOTNET_HOME/tools";
+export PATH="$PATH:$DOTNET_CLI_HOME:$DOTNET_CLI_HOME/tools";
 
 # nvm
 export NVM_DIR="$DEVELOPMENT/nvm";
@@ -56,9 +68,14 @@ export PATH="$BUN_INSTALL/bin:$PATH";
 
 # ruby
 export RBENV_ROOT="$DEVELOPMENT/rbenv";
-export PATH="$PATH:$RBENV_ROOT/bin";
 
 eval "$(rbenv init - --no-rehash bash)"
+
+RBENV_ACTIVE_VERSION=$(cat "$RBENV_ROOT/version");
+export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/bin";
+export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/lib";
+export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/share";
+export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/include";
 
 # var
 export SEARXNG_URL="http://localhost:12345";
