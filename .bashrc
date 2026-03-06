@@ -95,10 +95,11 @@ export SEARXNG_URL="http://localhost:12345";
 if [ -n "$HOME/.podman-container" ]; then
     source "$HOME/.podman-container/env.sh";
 fi
+
 source ~/.bash_profile;
 
 # OTHERS
-
+eval "$(fzf --bash)"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/pr/.lmstudio/bin"
