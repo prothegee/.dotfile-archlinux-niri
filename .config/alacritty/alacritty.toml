@@ -25,3 +25,6 @@ style = "Bold Italic"
 primary = { foreground = "#909090" }
 # primary = { foreground = "#c6c6c6", background = "#282c34" }
 # primary = { foreground = "#c6c6c6", background = "#131418" }
+
+[mouse]
+hide_when_typing = true
