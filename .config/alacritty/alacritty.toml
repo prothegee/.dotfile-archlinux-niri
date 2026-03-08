@@ -1,5 +1,5 @@
 [window]
-opacity = 0.93
+opacity = 0.9 # 0.93
 padding = { x = 6, y = 6 }
 
 [font]
