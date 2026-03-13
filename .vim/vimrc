@@ -17,4 +17,4 @@ set clipboard=unnamedplus
 set laststatus=3
 
 " load here
-"source ~/.vim/theme.vim
+source ~/.vim/theme.vim
