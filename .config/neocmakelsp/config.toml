@@ -1,4 +1,5 @@
-# command_case="lower_case"
+command_case="lower_case"
+command_upcase="lower_case"
 enable_external_cmake_lint=true
 line_max_words=160
 

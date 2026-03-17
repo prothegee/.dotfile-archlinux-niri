@@ -88,6 +88,9 @@ export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/lib";
 export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/share";
 export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/include";
 
+# docker
+# export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock';
+
 # var
 export SEARXNG_URL="http://localhost:12345";
 

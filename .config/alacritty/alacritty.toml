@@ -3,7 +3,7 @@ opacity = 0.9 # 0.93
 padding = { x = 6, y = 6 }
 
 [font]
-size = 11.0 # norm is 12
+size = 12.0 # 10/11; norm is 12
 
 [font.normal]
 family = "FiraMono Nerd Font"
