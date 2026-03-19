@@ -18,6 +18,7 @@ cp -rf ~/.vim/theme.vim ~/.dotfile-archlinux-niri/.vim/theme.vim;
 
 cp -rf ~/.bashrc ~/.dotfile-archlinux-niri;
 cp -rf ~/.bash_profile ~/.dotfile-archlinux-niri;
+cp -rf ~/.bash_tools ~/.dotfile-archlinux-niri;
 
 
 cp -rf ~/.config/user-dirs.dirs ~/.dotfile-archlinux-niri/.config;
