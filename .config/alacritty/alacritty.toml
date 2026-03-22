@@ -1,5 +1,5 @@
 [window]
-opacity = 0.9 # 0.93
+opacity = 0.90 # 0.93
 padding = { x = 6, y = 6 }
 
 [font]
@@ -22,7 +22,7 @@ family = "FiraMono Nerd Font"
 style = "Bold Italic"
 
 [colors]
-primary = { foreground = "#909090" }
+primary = { foreground = "#848484" }
 # primary = { foreground = "#c6c6c6", background = "#282c34" }
 # primary = { foreground = "#c6c6c6", background = "#131418" }
 
