@@ -635,9 +635,9 @@ binds {
     // Mod+Shift+P { power-off-monitors; }
 
     // OBS-CMD
-    Mod+KP_7 { spawn "obs-cmd" "recording" "start"; }
-    Mod+KP_8 { spawn "obs-cmd" "recording" "toggle-pause"; }
-    Mod+KP_9 { spawn "obs-cmd" "recording" "stop"; }
+    Mod+KP_7 allow-when-locked=true { spawn "obs-cmd" "recording" "start"; }
+    Mod+KP_8 allow-when-locked=true { spawn "obs-cmd" "recording" "toggle-pause"; }
+    Mod+KP_9 allow-when-locked=true { spawn "obs-cmd" "recording" "stop"; }
 }
 
 gestures {
@@ -653,3 +653,4 @@ gestures {
 // cursor {
 //     hide-after-inactive-ms 6000
 // }
+
