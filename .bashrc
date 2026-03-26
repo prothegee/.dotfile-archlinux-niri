@@ -94,6 +94,7 @@ export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/include";
 # var
 export SEARXNG_URL="http://localhost:12345";
 export OBS_WEBSOCKET_URL="obsws://localhost:4455/";
+# export GTK_THEME=Adwaita:dark; # doesn't work
 
 # extends
 if [ -n "$HOME/.podman-container" ]; then
