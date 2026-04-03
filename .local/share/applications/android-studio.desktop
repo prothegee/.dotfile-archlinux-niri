@@ -1,7 +1,8 @@
-[Desktop Entry]
-Name=Android Studio
-Exec=/mnt/256a1/android/studio/bin/studio
-Icon=/mnt/256a1/android/studio/bin/studio.png
-Type=Application
-Categories=Application;Productivity;Development
-Terminal=false
+# not working in niri wayland
+# [Desktop Entry]
+# Name=Android Studio
+# Exec=/mnt/256a1/android/studio/bin/studio.sh
+# Icon=/mnt/256a1/android/studio/bin/studio.png
+# Type=Application
+# Categories=Application;Productivity;Development
+# Terminal=false
