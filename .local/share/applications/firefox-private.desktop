@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Firefox private
+GenericName=Web Browser
+Exec=firefox --private-window %u
+Icon=/home/pr/download/firefox/about-logo-private.png
+Type=Application
+Categories=Network;WebBrowser;
+Terminal=false
+

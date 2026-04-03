@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Android Studio
+Exec=/mnt/256a1/android/studio/bin/studio
+Icon=/mnt/256a1/android/studio/bin/studio.png
+Type=Application
+Categories=Application;Productivity;Development
+Terminal=false

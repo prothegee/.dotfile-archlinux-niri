@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Godot 4.6.1-stable
+Exec=/home/pr/download/godot/Godot_v4.6.2-stable_linux.x86_64
+Icon=/home/pr/download/godot/godot-icon_color.svg
+Type=Application
+Categories=Application;Productivity;
+Terminal=false
