@@ -88,6 +88,22 @@ export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/lib";
 export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/share";
 export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/include";
 
+# flutter
+export FLUTTER_ROOT="$DEVELOPMENT/flutter";
+export PATH="$PATH:$FLUTTER_ROOT/bin";
+
+# android
+export ANDROID_HOME="/mnt/256a1/android";
+export ANDROID_ROOT="$ANDROID_HOME";
+export ANDROID_SDK_ROOT="$ANDROID_ROOT/sdk";
+# android: bin lib jbr etc
+export PATH="$PATH:$ANDROID_HOME/studio/bin";
+export PATH="$PATH:$ANDROID_HOME/studio/lib";
+export PATH="$PATH:$ANDROID_HOME/studio/jbr/bin";
+export PATH="$PATH:$ANDROID_HOME/studio/jbr/conf";
+export PATH="$PATH:$ANDROID_HOME/studio/jbr/legal";
+export PATH="$PATH:$ANDROID_HOME/studio/jbr/lib";
+
 # docker
 # export DOCKER_HOST='unix:///run/user/1000/podman/podman-machine-default-api.sock';
 
