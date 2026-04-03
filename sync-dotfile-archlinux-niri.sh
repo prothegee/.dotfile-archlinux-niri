@@ -28,6 +28,7 @@ cp -rf ~/.config/kwalletrc ~/.dotfile-archlinux-niri/.config;
 
 cp -rf ~/.config/alacritty ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/gtk-3.0 ~/.dotfile-archlinux-niri/.config;
+cp -rf ~/.config/gtk-4.0 ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/mako ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/neocmakelsp ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/niri ~/.dotfile-archlinux-niri/.config;
