@@ -21,7 +21,7 @@
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "Gruvbox Dark",
+        "dark": "One Dark Pro",
     },
     "tab_size": 4,
     "project_panel": {

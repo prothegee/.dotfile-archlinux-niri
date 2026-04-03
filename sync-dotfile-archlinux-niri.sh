@@ -42,6 +42,12 @@ cp -rf ~/.config/xdg-desktop-portal ~/.dotfile-archlinux-niri/.config;
 cp -rf ~/.config/zed ~/.dotfile-archlinux-niri/.config;
 
 
+cp -rf ~/.local/share/applications/android-studio.desktop \
+    ~/.dotfile-archlinux-niri/.local/share/applications;
+cp -rf ~/.local/share/applications/firefox-private.desktop \
+    ~/.dotfile-archlinux-niri/.local/share/applications;
+cp -rf ~/.local/share/applications/godot.desktop \
+    ~/.dotfile-archlinux-niri/.local/share/applications;
 cp -rf ~/.local/share/applications/lm-studio.desktop \
     ~/.dotfile-archlinux-niri/.local/share/applications;
 
