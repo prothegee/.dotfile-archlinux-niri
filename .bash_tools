@@ -1,3 +1,4 @@
 # mp4 to webp video
 # ffmpeg -i preview.mp4 -vf "fps=30,scale=1080:-1:flags=lanczos" -c:v libwebp -lossless 0 -q 80 -loop 0 preview.webp
 
+# ffmpeg -i input.mp4 -vcodec libwebp -lossless 0 -q:v 70 -loop 0 -preset picture -an -vsync 0 output.webp

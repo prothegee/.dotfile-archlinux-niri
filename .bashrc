@@ -14,6 +14,8 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/multiverse-neon.omp.json)"
 
 # core: DEVELOPMENT
 export DEVELOPMENT="/mnt/256a1";
+# core: DEVELOPMENT_REPO
+export DEVELOPMENT_REPO="$DEVELOPMENT/repo";
 
 export PATH="$PATH:$DEVELOPMENT/bin";
 export PATH="$PATH:$DEVELOPMENT/lib";
@@ -32,6 +34,11 @@ export RUSTUP_HOME="$DEVELOPMENT/rustup";
 export PATH="$PATH:$CARGO_HOME/bin";
 
 # zig: reserved (part of $DEVELOPMENT/{bin,lib,include,share})
+export PATH="$PATH:$HOME/.zig";
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.zig/0.16";
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.zig/0.17";
+# export PATH="$PATH:$HOME/.zig/0.16";
+# export PATH="$PATH:$HOME/.zig/0.17";
 
 # go
 export GOPATH="$DEVELOPMENT/golang";
@@ -92,6 +99,9 @@ export PATH="$PATH:$RBENV_ROOT/versions/$RBENV_ACTIVE_VERSION/include";
 export FLUTTER_ROOT="$DEVELOPMENT/flutter";
 export PATH="$PATH:$FLUTTER_ROOT/bin";
 
+# elixir
+export PATH="$PATH:$DEVELOPMENT/bin/elixir";
+
 # android
 export ANDROID="/mnt/256a1/android";
 export ANDROID_HOME="$ANDROID/sdk";
@@ -113,14 +123,17 @@ export ANDROID_AVD_HOME"=$HOME/.config/.android/avd";
 # var
 export SEARXNG_URL="http://localhost:12345";
 export OBS_WEBSOCKET_URL="obsws://localhost:4455/";
-# export GTK_THEME=Adwaita:dark; # doesn't work
 
 # extends
 if [ -n "$HOME/.podman-container" ]; then
     source "$HOME/.podman-container/env.sh";
 fi
-
-source ~/.bash_profile;
+if [ -f "$HOME/.bash_profile" ]; then
+    source ~/.bash_profile;
+fi
+if [ -f "$HOME/.bash_private" ]; then
+    source ~/.bash_private;
+fi
 
 export GTK_THEME=Adwaita:dark;
 
@@ -131,3 +144,8 @@ eval "$(fzf --bash)"
 export PATH="$PATH:/home/pr/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# eval "task list";
+
+
+# Added by Hugging Face CLI installer
+export PATH="/home/pr/.local/bin:$PATH"

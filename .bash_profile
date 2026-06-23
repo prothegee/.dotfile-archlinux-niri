@@ -108,6 +108,10 @@ _update-desktop-db() {
 
 # --------------------------------------------------------- #
 
+_react-nextjs-init() {
+    bunx create-next-app@latest;
+}
+
 # --------------------------------------------------------- #
 
 # alias kubectl="minikube kubectl --"
@@ -118,3 +122,14 @@ _update-desktop-db() {
 export PATH="$PATH:/home/pr/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# --------------------------------------------------------- #
+
+_llama-cpp-models() {
+    echo "LLMA.CPP MODELS:";
+    echo "- ggml-org/gemma-3-1b-it-GGUF";
+    echo "- ggml-org/gemma-4-26B-A4B-it-GGUF";
+}
+
+_llama-cli-default() {
+    llama-cli -hf ggml-org/gemma-3-1b-it-GGUF;
+}
