@@ -333,6 +333,21 @@ window-rule {
     open-floating true
 }
 
+// Float the MoniPet desktop pet above the tiling layout.
+// It spawns at the bottom-left, the pet app itself moves the
+// window around from there. No ring or border, it is a pet.
+window-rule {
+    match app-id=r#"^MoniPet$"#
+    open-floating true
+    default-floating-position x=0 y=0 relative-to="bottom-left"
+    focus-ring {
+        off
+    }
+    border {
+        off
+    }
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
