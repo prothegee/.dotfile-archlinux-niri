@@ -322,6 +322,9 @@ window-rule {
     // default-column-width {}
     geometry-corner-radius 6
     clip-to-geometry true
+    background-effect {
+        blur true
+    }
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
