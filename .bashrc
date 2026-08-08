@@ -10,7 +10,9 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # posh
-eval "$(oh-my-posh init bash --config ~/.poshthemes/multiverse-neon.omp.json)"
+eval "$(oh-my-posh init bash --config ~/.poshthemes/star.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/.poshthemes/pure.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/.poshthemes/multiverse-neon.omp.json)"
 
 # core: DEVELOPMENT
 export DEVELOPMENT="/mnt/256a1";
@@ -27,18 +29,14 @@ export PATH="$PATH:$DEVELOPMENT/include";
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$DEVELOPMENT/lib";
 export C_INCLUDE_PATH="$C_INCLUDE_PATH:$DEVELOPMENT/include";
 
+# zig
+export PATH="$PATH:$DEVELOPMENT/zig";
+
 # rust
 export CARGO_HOME="$DEVELOPMENT/cargo";
 export RUSTUP_HOME="$DEVELOPMENT/rustup";
 
 export PATH="$PATH:$CARGO_HOME/bin";
-
-# zig: reserved (part of $DEVELOPMENT/{bin,lib,include,share})
-export PATH="$PATH:$HOME/.zig";
-# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.zig/0.16";
-# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.zig/0.17";
-# export PATH="$PATH:$HOME/.zig/0.16";
-# export PATH="$PATH:$HOME/.zig/0.17";
 
 # go
 export GOPATH="$DEVELOPMENT/golang";
