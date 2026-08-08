@@ -133,3 +133,9 @@ _llama-cpp-models() {
 _llama-cli-default() {
     llama-cli -hf ggml-org/gemma-3-1b-it-GGUF;
 }
+
+# --------------------------------------------------------- #
+
+_niri-pick-cast_window() {
+    niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | jq .id)
+}
