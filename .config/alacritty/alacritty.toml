@@ -29,12 +29,12 @@ primary = { foreground = "#848484" }
 [mouse]
 hide_when_typing = true
 
-[cursor]
-blink_interval = 600
-blink_timeout = 0
-
-[cursor.style]
-blinking = "On" # On | Off | Always
+# [cursor]
+# blink_interval = 600
+# blink_timeout = 0
+#
+# [cursor.style]
+# blinking = "On" # On | Off | Always
 
 
 [[keyboard.bindings]]
