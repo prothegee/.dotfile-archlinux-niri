@@ -147,3 +147,11 @@ export PATH="$PATH:/home/pr/.lmstudio/bin"
 
 # Added by Hugging Face CLI installer
 export PATH="/home/pr/.local/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/pr/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end

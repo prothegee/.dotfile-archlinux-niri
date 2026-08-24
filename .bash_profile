@@ -139,3 +139,7 @@ _llama-cli-default() {
 _niri-pick-cast_window() {
     niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | jq .id)
 }
+
+_test_hello() {
+    echo "Hello, test"
+}
