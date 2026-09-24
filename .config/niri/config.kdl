@@ -653,16 +653,15 @@ binds {
     // Mod+Shift+P { power-off-monitors; }
 
     // OBS-CMD
-    Mod+KP_7     { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "start"; }
     Mod+KP_Home  { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "start"; }
-    Mod+KP_8     { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "toggle-pause"; }
     Mod+KP_Up    { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "toggle-pause"; }
-    Mod+KP_9     { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "stop"; }
     Mod+KP_Prior { spawn "/mnt/256a1/cargo/bin/obs-cmd" "recording" "stop"; }
 
     // Niri Pick Cast
-    Mod+KP_0     { spawn "sh" "-c" "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | jq -r .id)"; }
     Mod+KP_Insert{ spawn "sh" "-c" "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | jq -r .id)"; }
+
+    // Flameshot Gui
+    Mod+Print   { spawn "flameshot" "gui"; }
 }
 
 gestures {

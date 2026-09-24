@@ -32,9 +32,15 @@ hide_when_typing = true
 # [cursor]
 # blink_interval = 600
 # blink_timeout = 0
-#
-# [cursor.style]
-# blinking = "On" # On | Off | Always
+# smooth_motion = true
+# smooth_motion_factor = 0.2
+# smooth_motion_spring = 0.5
+# smooth_motion_max_stretch_x = 3.0
+# smooth_motion_max_stretch_y = 3.0
+# smooth_motion_antijitter_ms = 50
+
+[cursor.style]
+blinking = "On" # On | Off | Always
 
 
 [[keyboard.bindings]]

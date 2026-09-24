@@ -16,8 +16,8 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/star.omp.json)"
 
 # core: DEVELOPMENT
 export DEVELOPMENT="/mnt/256a1";
-# core: DEVELOPMENT_REPO
-export DEVELOPMENT_REPO="$DEVELOPMENT/repo";
+# # core: DEVELOPMENT_REPO
+# export DEVELOPMENT_REPO="$DEVELOPMENT/repo";
 
 export PATH="$PATH:$DEVELOPMENT/bin";
 export PATH="$PATH:$DEVELOPMENT/lib";
@@ -45,27 +45,27 @@ export PATH="$PATH:$GOPATH/bin";
 export PATH="$PATH:$GOPATH/pkg";
 
 # dotnet
-DOTNET_DEFAULT_VER="10.0"
-export DOTNET_ROOT="$DEVELOPMENT";
-export DOTNET_HOME="$DEVELOPMENT";
-
-export DOTNET_CLI_HOME="$DOTNET_ROOT";
-
-export NUGET_PACKAGES="$DEVELOPMENT/nuget-packages";
+export DOTNET_VERSION="10.0";
+export DOTNET_ROOT="$HOME/.dotnet";
 
 export PATH="$PATH:$DOTNET_ROOT";
-export PATH="$PATH:$DOTNET_HOME";
-export PATH="$PATH:$DOTNET_CLI_HOME";
-export PATH="$PATH:$NUGET_PACKAGES";
+export PATH="$PATH:$DOTNET_ROOT/tools";
+export PATH="$PATH:$DOTNET_ROOT/nuget";
 
-export PATH="$PATH:$DOTNET_ROOT/.nuget/lib";
-export PATH="$PATH:$DOTNET_ROOT/.nuget/lib/net$DOTNET_DEFAULT_VER";
-export PATH="$PATH:$DOTNET_ROOT/.nuget/content/LanguageServer/linux-x64";
+export PATH="$PATH:$DOTNET_ROOT/host/fxr/10.0.12";
 
-# not sure for these 3
-export PATH="$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools";
-export PATH="$PATH:$DOTNET_HOME:$DOTNET_HOME/tools";
-export PATH="$PATH:$DOTNET_CLI_HOME:$DOTNET_CLI_HOME/tools";
+export PATH="$PATH:$DOTNET_ROOT/lsp";
+export PATH="$PATH:$DOTNET_ROOT/lsp/_rels";
+export PATH="$PATH:$DOTNET_ROOT/lsp/lib/net$DOTNET_VERSION";
+export PATH="$PATH:$DOTNET_ROOT/lsp/content/LanguageServer/neutral";
+# export PATH="$PATH:$DOTNET_ROOT/lsp/content/LanguageServer/linux-x64";
+export PATH="$PATH:$DOTNET_ROOT/lsp/package";
+
+# java
+export PATH="$PATH:$DEVELOPMENT/javad/bin";
+if [ -f "$HOME/.sdkman/bin/sdkman-init.sh" ]; then
+    source ~/.sdkman/bin/sdkman-init.sh
+fi
 
 # nvm
 export NVM_DIR="$DEVELOPMENT/nvm";
@@ -81,6 +81,9 @@ fi
 # bun
 export BUN_INSTALL="$DEVELOPMENT/bun";
 export PATH="$BUN_INSTALL/bin:$PATH";
+
+# python
+export PATH="$PATH:$HOME/.local/share/uv/tools/basedpyright/bin";
 
 # ruby
 export RBENV_ROOT="$DEVELOPMENT/rbenv";
@@ -155,3 +158,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
+# kimi-code
+export PATH="/home/pr/.kimi-code/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
