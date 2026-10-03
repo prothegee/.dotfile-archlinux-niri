@@ -109,7 +109,19 @@ _update-desktop-db() {
 # --------------------------------------------------------- #
 
 _react-nextjs-init() {
-    bunx create-next-app@latest;
+    npx create-next-app@latest;
+}
+_vue-init() {
+    npm create vue@latest;
+}
+_angular-init() {
+    npx -p @angular/cli@latest ng new;
+}
+_angular-init-routing() {
+    npx -p @angular/cli@latest ng new --routing;
+}
+_svelte-init() {
+    npx sv create;
 }
 
 # --------------------------------------------------------- #
