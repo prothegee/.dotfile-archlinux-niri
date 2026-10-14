@@ -1,0 +1,11 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+alt+p"
+
+[theme]
+name = "gruvbox"
+auto_switch = false
+
+[ui.toast]
+delivery = "system"

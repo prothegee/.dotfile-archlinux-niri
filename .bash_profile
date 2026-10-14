@@ -152,6 +152,17 @@ _niri-pick-cast_window() {
     niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | jq .id)
 }
 
+# --------------------------------------------------------- #
+
+_monitor-hardware() {
+    btop;
+}
+_monitor-gpu() {
+   watch -n 0.5 nvidia-smi; 
+}
+
+# --------------------------------------------------------- #
+
 _test_hello() {
     echo "Hello, test"
 }

@@ -141,12 +141,14 @@ export GTK_THEME=Adwaita:dark;
 # OTHERS
 eval "$(fzf --bash)"
 
+# AI & LLM
+export HF_HOME="/mnt/256a1/llm";
+
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/pr/.lmstudio/bin"
 # End of LM Studio CLI section
 
 # eval "task list";
-
 
 # Added by Hugging Face CLI installer
 export PATH="/home/pr/.local/bin:$PATH"
@@ -165,3 +167,6 @@ export PATH="/home/pr/.kimi-code/bin:$PATH"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# opencode
+export PATH=/home/pr/.opencode/bin:$PATH
