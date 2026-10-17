@@ -21,6 +21,8 @@
     "git_panel": {
         "dock": "left"
     },
+    "restore_on_startup": "empty_tab",
+    "on_new_window": "empty_tab",
     "format_on_save": "off",
     "remove_trailing_whitespace_on_save": false,
     "ensure_final_newline_on_save": false,
@@ -35,7 +37,7 @@
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "One Dark Pro",
+        "dark": "One Dark",
     },
     "tab_size": 4,
     "project_panel": {

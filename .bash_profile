@@ -155,9 +155,13 @@ _niri-pick-cast_window() {
 # --------------------------------------------------------- #
 
 _monitor-hardware() {
+    mkdir -p ~/.monitor/monitor-hardware;
+    cd ~/.monitor/monitor-hardware;
     btop;
 }
 _monitor-gpu() {
+    mkdir -p ~/.monitor/monitor-gpu;
+    cd ~/.monitor/monitor-gpu;
    watch -n 0.5 nvidia-smi; 
 }
 
@@ -166,3 +170,5 @@ _monitor-gpu() {
 _test_hello() {
     echo "Hello, test"
 }
+. "/home/pr/.deno/env"
+source /home/pr/.local/share/bash-completion/completions/deno.bash

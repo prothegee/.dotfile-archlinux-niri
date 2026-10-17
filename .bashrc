@@ -139,6 +139,9 @@ fi
 export GTK_THEME=Adwaita:dark;
 
 # OTHERS
+export HISTFILESIZE=1000000
+export HISTSIZE=1000000
+export HISTCONTROL=ignoreboth
 eval "$(fzf --bash)"
 
 # AI & LLM
@@ -170,3 +173,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 # opencode
 export PATH=/home/pr/.opencode/bin:$PATH
+. "/home/pr/.deno/env"
+source /home/pr/.local/share/bash-completion/completions/deno.bash
